@@ -52,7 +52,7 @@
             <li>
               <label id="tcommute-days-per-week">If yes, telecommute days per week:</label></br>
                 <!--fiddled with code so that the value on the range ticker is in a box next to it. Can't get it to work.-->
-                <input type="range" id="tcommute-days" name="tcommute-days" min="1" max="4" step value="1" list="datalist" oninput="amount.value=rangeInput.value"></br>
+                <input type="range" id="tcommute-days" name="tcommute-days" min="1" max="4" value="1" list="datalist"></br>
                   <datalist id="datalist">
                     <option>1</option>
                     <option>2</option>
@@ -72,7 +72,7 @@
               <p>Office Location 1:</p>
                 <input type="text" id="office-address-street-1" name="office-address-street-1" placeholder="1234 Main St">Street</br>
               <input type="text" id="office-address-city-1" name="office-address-city-1" placeholder="City">City</br>
-              <select id="office-address-state-1" name="office-address-state-1">State
+              <select id="office-address-state-1" name="office-address-state-1">
                   <option value="AL">Alabama</option>
                   <option value="AK">Alaska</option>
                   <option value="AZ">Arizona</option>
@@ -125,11 +125,11 @@
                   <option value="WI">Wisconsin</option>
                   <option value="WY">Wyoming</option>
                 </select></br>
-                <input type="text" id="office-address-state-1" name="office-address-state-1" placeholder="00000" pattern="^[0-9]{5}" />Zip Code</br>
+                <input type="text" id="office-address-zip-1" name="office-address-zip-1" placeholder="00000" pattern="^[0-9]{5}" />Zip Code</br>
               <p>Office Location 2:</p>
                 <input type="text" id="office-address-street-2" name="office-address-street-2" placeholder="1234 Main St">Street</br>
               <input type="text" id="office-address-city-2" name="office-address-city-2" placeholder="City">City</br>
-              <select id="office-address-state-2" name="office-address-state-2">State
+              <select id="office-address-state-2" name="office-address-state-2">
                   <option value="AL">Alabama</option>
                   <option value="AK">Alaska</option>
                   <option value="AZ">Arizona</option>
@@ -182,7 +182,7 @@
                   <option value="WI">Wisconsin</option>
                   <option value="WY">Wyoming</option>
                 </select></br>
-                <input type="text" id="office-address-state-2" name="office-address-state-2" placeholder="00000" pattern="^[0-9]{5}" />Zip Code</br>
+                <input type="text" id="office-address-zip-2" name="office-address-zip-2" placeholder="00000" pattern="^[0-9]{5}" />Zip Code</br>
             <li>
               <label id="travel">Does this position require travel to client sites and other off-site locations? </label>
               <input type="radio" id="travel-y" name="travel" value="Yes">Yes 
@@ -201,39 +201,9 @@
               <input type="radio" id="intl-travel-y" name="intl-travel-y" value="Yes">Yes 
               <input type="radio" id="intl-travel-n" name="intl-travel-y" value="No">No      
             </li>
-<!--
-                <select name="year">
-                  <option value="1970">1970</option>
-                  <option value="1971">1971</option>
-                  <option value="1972">1972</option>
-                  <option value="1973">1973</option>
-              </select>            
-            </li>
-            <li>
-              <label>Date of Birth Day</label>
-                <select name="day">
-                <select name="day">
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                </select> 
-            </li>
-            <li>
-              <label>Please enter a valid email</label>
-                <input type="email" name="email" />
-            </li>
-            <li>
-              <label>Please enter a donation amount</label>$
-                <input type="number" value="100" name="donation" max="101" min="0" placeholder="100"/> 
-            </li>
-            <li>
-              <label>Enter Zip Code</label>
-                <input type="text" required placeholder="00000" pattern="^[0-9]{5}" />
-            </li>
           </ul>
-          <input type="submit" value="Donate Now!" name="submit"/>
--->
+          <input type="submit" value="Add Information to Job Listing" name="submit"/>
+
         </fieldset>
 
       </form>
@@ -241,7 +211,7 @@
 
     <!--  This is the footer section, only footer stuff -->
     <footer>
-      <p>&copy; copyright 2015</p>
+      <p>&copy; copyright 2016</p>
     </footer>
 
   </body>
